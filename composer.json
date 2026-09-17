@@ -1,0 +1,14 @@
+{
+    "name": "kodakodra/portfolio-site",
+    "description": "Reusable PHP portfolio-site foundation for developers, designers and digital professionals.",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "phpmailer/phpmailer": "^7.0"
+    },
+    "scripts": {
+        "serve": "php -S localhost:8000 -t public public/router.php",
+        "test": "php tests/smoke.php"
+    }
+}

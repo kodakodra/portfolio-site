@@ -1,0 +1,30 @@
+name: PHP checks
+
+on:
+  push:
+    branches: [main, feature/portfolio-startup]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        php: ['8.2', '8.3']
+    runs-on: ubuntu-latest
+    name: PHP ${{ matrix.php }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring, openssl
+          coverage: none
+      - name: Install dependencies
+        run: composer install --no-interaction --prefer-dist
+      - name: Lint PHP
+        run: |
+          find config public src templates tests -type f -name '*.php' -print0 | xargs -0 -n1 php -l
+      - name: Run smoke tests
+        run: composer test

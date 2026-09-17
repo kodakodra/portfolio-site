@@ -1,0 +1,1 @@
+<section class="page-hero"><div class="container narrow"><p class="eyebrow">404</p><h1>Page not found.</h1><p>The page you requested does not exist or has moved.</p><a class="button primary" href="/">Return home</a></div></section>

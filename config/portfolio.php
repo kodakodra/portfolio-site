@@ -1,0 +1,112 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'name' => 'KodaKodra',
+    'short_name' => 'KodaKodra',
+    'title' => 'Software Engineer & Web Developer',
+    'tagline' => 'Building practical software and thoughtful digital experiences.',
+    'description' => 'Portfolio of software engineering, web development and bespoke digital projects by KodaKodra.',
+    'site_url' => env('SITE_URL', 'http://localhost:8000'),
+    'locale' => 'en_GB',
+    'email' => env('CONTACT_EMAIL', 'hello@example.com'),
+    'location' => 'United Kingdom',
+    'availability' => 'Available for selected freelance and contract work.',
+    'cv_url' => '',
+    'primary_action' => ['label' => 'View projects', 'href' => '/projects'],
+    'secondary_action' => ['label' => 'Get in touch', 'href' => '/contact'],
+    'navigation' => [
+        ['label' => 'Home', 'href' => '/'],
+        ['label' => 'Projects', 'href' => '/projects'],
+        ['label' => 'About', 'href' => '/about'],
+        ['label' => 'Contact', 'href' => '/contact'],
+    ],
+    'theme' => [
+        'brand' => '#162033',
+        'brand_dark' => '#0d1422',
+        'accent' => '#5ea6ff',
+        'surface' => '#f5f7fb',
+        'surface_alt' => '#eaf0f8',
+        'text' => '#18202d',
+        'muted' => '#5a6677',
+    ],
+    'hero' => [
+        'eyebrow' => 'Software engineering · Web development · Bespoke projects',
+        'title' => 'Software built to solve real problems.',
+        'body' => 'A reusable portfolio foundation for presenting projects, technical skills, experience and ways to get in touch without unnecessary complexity.',
+        'points' => [
+            'Bespoke applications and websites built from scratch',
+            'Refactoring, QA, regression testing and problem solving',
+            'Clear delivery across frontend, backend and product work',
+        ],
+    ],
+    'intro' => [
+        'eyebrow' => 'Selected work',
+        'title' => 'Projects across web, software and digital products.',
+        'body' => 'Use projects to demonstrate the problems solved, technologies used and outcomes delivered. The content below is intentionally configuration-driven for reuse.',
+    ],
+    'projects' => [
+        [
+            'slug' => 'torin',
+            'title' => 'Torin',
+            'category' => 'Java · Game development',
+            'summary' => 'A Java/Gradle game project focused on procedural worlds, entities, lighting and a dynamic celestial cycle.',
+            'description' => 'A larger-scale software project involving world generation, chunked environments, entity behaviour, block physics, rendering and iterative debugging across interconnected systems.',
+            'stack' => ['Java', 'Gradle', 'JOML', 'OpenGL'],
+            'highlights' => ['Procedural world systems', 'Entity movement and animation', 'Lighting and celestial cycle work'],
+            'url' => 'https://github.com/kodakodra/Torin',
+            'status' => 'In development',
+        ],
+        [
+            'slug' => 'business-site',
+            'title' => 'Business Site',
+            'category' => 'PHP · Web development',
+            'summary' => 'A reusable production-minded PHP brochure-site starter for service businesses and small professional firms.',
+            'description' => 'A configuration-driven PHP foundation covering responsive pages, secure contact handling, SMTP email, SEO, legal pages, testing, documentation and deployment guidance.',
+            'stack' => ['PHP 8.2+', 'Composer', 'PHPMailer', 'Apache'],
+            'highlights' => ['Secure contact forms', 'SMTP email delivery', 'SEO and deployment foundations'],
+            'url' => 'https://github.com/kodakodra/business-site',
+            'status' => 'Complete',
+        ],
+        [
+            'slug' => 'custom-web-project',
+            'title' => 'Custom Web Projects',
+            'category' => 'Web · Product · QA',
+            'summary' => 'Bespoke websites and web applications spanning social, ecommerce, dashboards, analytics, booking and small-business systems.',
+            'description' => 'A representative category for showcasing broader client and product work, including custom builds, refactoring, bug fixing, QA, regression testing and delivery planning.',
+            'stack' => ['PHP', 'JavaScript', 'HTML', 'CSS'],
+            'highlights' => ['Custom builds from scratch', 'Refactoring and bug fixing', 'QA and regression testing'],
+            'url' => '',
+            'status' => 'Selected examples',
+        ],
+    ],
+    'skills' => [
+        ['group' => 'Development', 'items' => ['PHP', 'Java', 'JavaScript', 'HTML', 'CSS', 'SQL']],
+        ['group' => 'Engineering', 'items' => ['Git', 'Gradle', 'Composer', 'Testing', 'Debugging', 'Refactoring']],
+        ['group' => 'Product', 'items' => ['Planning', 'Efficiency', 'Requirements', 'Product tracking', 'Delivery']],
+    ],
+    'experience' => [
+        ['period' => 'Selected work', 'title' => 'Software engineering & web development', 'body' => 'Projects across social platforms, ecommerce, portfolios, brochure sites, dashboards, analytics, booking systems and bespoke small-business software.'],
+        ['period' => 'Delivery focus', 'title' => 'Quality and iteration', 'body' => 'Hands-on work covering planning, implementation, refactoring, bug fixing, QA testing and regression testing alongside ongoing product improvements.'],
+    ],
+    'about' => [
+        'eyebrow' => 'About',
+        'title' => 'A practical engineering approach from idea to delivery.',
+        'body' => 'This portfolio is designed to show the work rather than hide it behind a generic job title. Use this section for your own story, working style, experience, qualifications and the kinds of problems you enjoy solving.',
+    ],
+    'process' => [
+        ['number' => '01', 'title' => 'Understand', 'body' => 'Clarify the problem, requirements, constraints and useful outcome.'],
+        ['number' => '02', 'title' => 'Build', 'body' => 'Implement the smallest sensible architecture, then iterate against real requirements.'],
+        ['number' => '03', 'title' => 'Test', 'body' => 'Verify behaviour, fix defects and regression-test important paths before delivery.'],
+        ['number' => '04', 'title' => 'Refine', 'body' => 'Improve usability, maintainability and documentation as the project develops.'],
+    ],
+    'social' => [
+        ['label' => 'GitHub', 'href' => 'https://github.com/kodakodra'],
+        ['label' => 'LinkedIn', 'href' => 'https://www.linkedin.com/'],
+    ],
+    'legal' => [
+        'privacy_contact' => env('CONTACT_EMAIL', 'hello@example.com'),
+        'owner_notice' => 'Replace with your preferred legal or business details where applicable.',
+    ],
+];
